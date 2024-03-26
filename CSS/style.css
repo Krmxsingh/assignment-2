@@ -1,0 +1,387 @@
+/*Karamjeet Singh 8915037*/
+
+/*html font style*/
+html {
+    font: 20px Arial, sans-serif
+}
+
+/* h1 h2 font style*/
+h1, h2 {
+    font-variant: small-caps;
+    text-align: center;
+    color:#888;
+}
+
+#header-headings{
+    background:#ccb533
+}
+
+.main-section {
+    padding: 20px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.2em; 
+}
+
+footer p {
+    font-size: 0.8em;
+    text-align: center;
+    background: #3366cc;
+    padding: 20px;
+}
+
+/*Height Width & Max Width*/
+/* body {
+    width: 80%;
+    max-width: 900px;
+} */
+
+.main-section-figure img {
+    width: 100%;
+    height: auto;
+}
+
+.main-section-figure {
+    width: 80%;
+    height: auto;
+    margin: 1em auto;
+}
+
+iframe, video {
+    width: 100%;
+}
+
+/*Box Model & Alignment*/
+
+body {
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+header, footer{
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+#bio {
+    text-align: left;
+}
+
+
+.main-section-figure {
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#quote {
+    padding: 1em;
+}
+
+video,
+iframe {
+    padding: 0.6em;
+}
+
+/* Borders & Box Shadow*/
+
+header, footer {
+    width: 100%;
+    font-style: arial;
+    color: #ff9900;
+}
+
+main {
+    background-color: rgb(234, 226, 217);
+}
+.main-section-figure img.rounded{
+    border-radius: 30px;
+}
+
+#absolute-path-image ,#relative-path-image{
+    background-color: hsla(35, 85%, 85%, 1);
+    border: 2px solid #080808;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+
+#relative-path-image.rounded {
+    width: 100%;
+    font-style: arial;
+    color: firebrick;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 14px;
+}
+
+#absolute-path-image.rounded {
+    width: 100%;
+    font-style: arial;
+    color: darkorchid;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 12px;
+}
+
+video,
+iframe.rounded{
+    font-style: arial;
+    color: rgb(50, 176, 204);
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 12px;
+    width:"400px";
+    height:"500px";
+}
+
+#quote.rounded {
+    width: 100%;
+    font-style: arial;
+    color:#433;
+    border: 2px solid #222;
+    border-radius: 12px;
+}
+
+#quote {
+    border: 2px solid #ff4263;
+    box-shadow: 10px 5px 5px red;
+
+}
+video,
+iframe.rounded {
+    width: 100%;
+    font-style: arial;
+    color: #433;
+    border:#888;
+    border-radius: #999;
+}
+
+/*Colour*/
+
+figcaption #relative-path-image{
+    color: #cc7833;
+}
+
+figcaption #absolute-path-image{
+    color: #ccc233;
+}
+
+h1, h2 {
+    color:purple;
+}
+
+/*Background*/
+
+header, footer {
+    background: linear-gradient(to right rgb(204, 0, 255), rgb(0, 0, 255));
+}
+
+.main-section {
+    background-color:hsla(295, 59%, 70%, 0.8);
+}
+
+figcaption #realtive-path-image{
+    background-color: hsla(0, 100%, 50%, 0.8);
+}
+
+figcaption #absolute-path-image{
+    background-color: hsla(272, 100%, 50%, 0.8);
+}
+
+/*Accessibility*/
+
+
+/* CSS for the Contact page */
+/* Form field styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input,
+form select,
+form textarea,
+form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
+/* Add margin to checkbox label */
+/* Adjust checkbox alignment */
+form input[type="checkbox"] {
+    vertical-align: middle;
+}
+/* Layout */
+
+/* CSS for the Contact page */
+
+/* Form and aside container */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 70% auto; /* Adjust the width of the first column (form) */
+    gap: 10px; /* Adjust the gap between the form and the aside */
+}
+
+/* Form section */
+.form-section {
+    grid-column: 1; /* Place form in the first column */
+}
+
+/* Aside section */
+aside {
+    grid-column: 2; /* Place aside in the second column */
+}
+
+/* Adjustments for smaller screens */
+/* CSS for the Contact page */
+
+/* Main content and aside container */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 70% auto; /* Adjust the width of the main content and aside */
+    gap: 20px; /* Adjust the gap between the main content and aside */
+}
+
+/* Main content section */
+.main-content {
+    grid-column: 1; /* Place main content in the first column */
+}
+
+/* Aside section */
+aside {
+    grid-column: 2; /* Place aside in the second column */
+}
+
+/* Adjustments for smaller screens */
+aside table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+aside th,
+aside td {
+    border: 2px solid #aba8a8;
+    padding: 8px;
+}
+
+aside th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+aside ul {
+    list-style-type: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; /* Background color for the navigation */
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%; /* Make the ul cover the whole line */
+}
+
+nav ul li {
+    flex: 1; /* Each link covers equal space */
+    text-align: center;
+    margin: 0 10px;
+    list-style: none; /* Remove the dot */
+    padding: 5px; /* Add padding */
+    background-color: #f3f0f0; /* Background color for the link "boxes" */
+}
+nav ul li:not(:last-child) {
+    margin-right: 10px; /* Add space between the links */
+}
+nav ul li a {
+    display: block;
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: auto; /* Change to single column layout on smaller screens */
+    }
+    
+    .form-section,
+    aside {
+        grid-column: auto; /* Reset grid column to default on smaller screens */
+    }
+    html {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    /* Adjust navigation styles for smaller screens */
+    nav ul li {
+        padding: 8px; /* Decrease padding for smaller screens */
+    }
+    nav ul {
+        flex-direction: column;
+         /* Stack the links in a column */
+        align-items: center; /* Center the links vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between links */
+        margin-bottom: 5px; /* Add margin below each link */
+        width: 100%; /* Make each link cover the whole line */
+    }
+}
+@media screen and (min-width: 1024px) {
+     .section-wrapper {
+        display: flex;
+        background-color: hsla(295, 59%, 70%, 0.8);
+        justify-content: space-between;
+    }
+    .main-section-figure {
+    padding: 10px;
+    padding-top: 60px;
+    margin: 10px auto;
+    text-align: center;}
+    .bio-section {
+        flex: 0 0 60%;
+    }
+    
+    /* .main-section-figure {
+        flex: 0 0 35%;
+    } */
+    }
+    
+    /* Media query for tablet screens */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        flex: 1;
+        margin-right: 20px; /* Adjust margin as needed */
+    }
+
+    aside {
+        flex: 0 0 30%; /* Adjust width as needed */
+    }
+}
